@@ -1,0 +1,31 @@
+\documentclass[10pt, a4paper]{article}
+%Gummi|065|=)
+
+\usepackage{CJK}
+
+
+\title{\textbf{Alogrithm exercise }}
+\author{ywjia@mail.ustc.edu.cn\\
+		SA14011066\\
+		贾亚伟}
+\date{2014-10-23}
+
+\begin{document}
+
+\maketitle
+
+\section{ex4}
+\textbf{Question:} \\
+Assume $\epsilon, \delta$ is constant within $(0, 1)$, prove: \\
+If I is the correct value of $\int_0^1{f(x)dx}$, and h is the return value of alogrithm "HitorMiss", Then $Prob[|h-I| < \epsilon] \geq 1 - \delta$ when $n \geq I(1-I)/\epsilon^{2}\delta$. \\
+ \textbf{Prove:}\\
+Assume we hit the area n times and there are  k points scatterd under the area $f(x)$.Apparently, the random X that the number of points scattered under $f(x)$ is Binomial Distribution, that is $P_r(X = k) = C_n^{k}p^{k}(1-p)^{n-k}$
+then, $E(X) = np, Var(X) = np(1-p)$.\\
+the h that HitOrMiss return is $k/n$, So $h = X/n, E(h) = E(X/n) = p = k/n = I, Var(h) = Var(X/n) = \frac{p(1-p)}{n} = \delta^{2}$. \\
+According to Chebyshev's inequality $Pr(|h - I| \leq \epsilon) \geq 1 - \delta^{2}/\epsilon^{2} $  And according to the cond: $n \geq I(1-I)/\epsilon^{2}\delta$, So we have $Pr(|h - I| \leq \epsilon )\geq 1 - \frac{p(1-p)}{\epsilon^{2}n} \geq 1 - \frac{p(1-p)}{\epsilon^{2}}\frac{\epsilon^{2}\delta}{I(1-I)} = 1 - \delta.\\
+Q.E.D$
+
+
+
+\end{document}
+
