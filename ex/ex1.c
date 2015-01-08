@@ -1,4 +1,4 @@
-#include"./include/random.h"
+#include"../include/random.h"
 #include<stdio.h>
 
 
@@ -10,6 +10,7 @@ float pi(int n){
 	{
 		x = f_uniform(0, 1);
 		y = x;
+		//y = f_uniform(0, 1);
 		if(x*x + y*y <= 1)
 			k++;
 	}
@@ -19,10 +20,10 @@ float pi(int n){
 
 int main(){
 
-	for(int i = 10; i < 1000; i++)
+	for(int i = 1; i < 100000000; i = i*100)
 	{
 		printf("pi = %6f  when n = %d\n", pi(i), i);
 	}
-	printf("pi = %6f  ", pi(10000000));
+//	printf("pi = %6f  ", pi(100000000));
 	return 0;
 }

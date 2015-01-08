@@ -20,13 +20,14 @@ def SetCount(n):
 
 
 if  __name__ == '__main__':
-    n = 100000
+    n = 1000000
     i = 0
     sum = 0
     while i != 100:
         card = SetCount(n)
         sum = sum + card
         i = i+1
-    print(sum/i)
+    print ("the card of set is: ")
+    print (sum/i)
 
 

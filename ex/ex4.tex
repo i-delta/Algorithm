@@ -1,11 +1,11 @@
 \documentclass[10pt, a4paper]{article}
 %Gummi|065|=)
-
+\usepackage{graphicx}
 \usepackage{CJK}
 \usepackage{amsmath}
 \usepackage{algorithm}
 \usepackage[noend]{algpseudocode}
-
+\begin{CJK}{UTF8}{gbsn}
 
 
 \title{\textbf{Alogrithm exercise }}
@@ -19,13 +19,18 @@
 \begin{document}
 
 \maketitle
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
 
 
 \section{ex1}
-ex1.c in ex director
+ex1.c in ex director \\
 
+\textbf{result as follows：}
+\includegraphics{./ex1pic}
 \section{ex2}
-ex2.c in ex director
+ex2.c in ex director 
+
+
 
 \section{ex3}
 ex3.c in ex director
@@ -47,7 +52,7 @@ Q.E.D$
 ex5.py in ex director
 
 \section{ex6}
-\begin{CJK}{UTF8}{gbsn}
+
 \textbf{问题：}
 写一Sherwood算法C 与算法A，B，D比较，并给出实验结果。
 
@@ -87,6 +92,11 @@ ex5.py in ex director
 \EndProcedure
 \end{algorithmic}
 \end{algorithm}
+
+% 分布式算法部分习题
+\section{ex2.1}
+\textbf{问题:}分析在同步和异步模型下,convergecast 算法的时间复杂性。
+
 
 
 

@@ -1,11 +1,11 @@
 \documentclass[10pt, a4paper]{article}
 %Gummi|065|=)
-
+\usepackage{graphicx}
 \usepackage{CJK}
 \usepackage{amsmath}
 \usepackage{algorithm}
 \usepackage[noend]{algpseudocode}
-
+\begin{CJK}{UTF8}{gbsn}
 
 
 \title{\textbf{Alogrithm exercise }}
@@ -19,17 +19,29 @@
 \begin{document}
 
 \maketitle
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
 
 
 \section{ex1}
-ex1.c in ex director
+\textbf{程序ex1.c 见 ex 文件目录 }\\
+\textbf{result as follows：} \\
+
+\includegraphics{../pic/ex1pic.png}
 
 \section{ex2}
-ex2.c in ex director
+程序ex2.c 见 ex 文件目录  \\
+\textbf{result as follows：} \\
+
+\includegraphics[width=15cm]{../pic/ex2.png}
 
 \section{ex3}
-ex3.c in ex director
+\textbf{问题：}\\
+ calculate the integer f: [a, b] $\rightarrow$ [c, d] \\
+ here set f(x) = sin(x).\\
+\textbf{程序ex3.c 见 ex 文件目录 } \\
+\textbf{result as follows：} \\
 
+\includegraphics[width=15cm]{../pic/ex3.png}
 
 \section{ex4}
 \textbf{Question:} \\
@@ -44,16 +56,21 @@ Q.E.D$
 
 \section{ex5}
 
-ex5.py in ex director
+\textbf{程序ex5.py 见 ex 文件目录 }\\
+\textbf{result as follows：} \\
 
+\includegraphics[width=15cm]{../pic/ex5.png}
+\textbf{分析：} \\
+实验结果表明，当要估值的集合的基越大，也就是$n$ 值越大 算法对n的估值越准确。
 \section{ex6}
-\begin{CJK}{UTF8}{gbsn}
+
 \textbf{问题：}
 写一Sherwood算法C 与算法A，B，D比较，并给出实验结果。
 
 \textbf{答案:} \\
-程序ex6.c 及结果 见 ex 文件夹。 
-
+程序ex6.c 见 ex 文件夹。 \\
+程序运行结果如下：\\
+\includegraphics[width=15cm]{../pic/ex6.png}
 \section{ex7}
 
 \textbf{问题：} 
@@ -64,7 +81,8 @@ ex5.py in ex director
 
 \section{ex8}
 
-写一算法，求n=12-20时最优的StepVegas值。
+写一算法，求n=12-20时最优的StepVegas值。\\
+\textbf{算法如下：}
 \begin{algorithm}
 \caption{求StepVegas最优值}\label{euclid}
 \begin{algorithmic}[1]
